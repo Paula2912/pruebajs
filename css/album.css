@@ -1,0 +1,103 @@
+body {
+  margin: 0;
+  font-family: 'Dancing Script', cursive;
+  background: linear-gradient(135deg, #fff1f2, #ffe6eb);
+  color: #5a2a2a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  overflow-x: hidden;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  text-shadow: 2px 2px 5px rgba(255,105,135,0.3);
+}
+
+.gallery-container {
+  position: relative;
+  width: 90%;
+  max-width: 1200px;
+  overflow: hidden;
+}
+
+.gallery {
+  display: flex;
+  transition: transform 0.6s ease;
+  gap: 40px;
+}
+
+/* Sección tipo collage */
+.section {
+  display: flex;
+  gap: 20px;
+}
+
+/* Marcos dorados barrocos */
+.frame {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 8px solid #FFD700;
+  border-radius: 12px;
+  box-shadow: inset 0 0 10px rgba(255,215,0,0.6), 0 8px 25px rgba(0,0,0,0.3);
+  background: #fffafc;
+  overflow: hidden;
+}
+
+.frame img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+/* Tamaños distintos para el collage */
+.frame.small { width: 150px; height: 150px; }
+.frame.medium { width: 200px; height: 200px; }
+.frame.large { width: 250px; height: 250px; }
+
+/* Botones de navegación */
+.nav {
+  background-color: rgba(255, 105, 135, 0.8);
+  border: none;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+  padding: 10px 15px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  transition: background 0.3s;
+}
+
+.nav:hover {
+  background-color: #ff4f73;
+}
+
+.prev { left: -20px; }
+.next { right: -20px; }
+
+/* Botón continuar */
+#continueBtn {
+  margin-top: 30px;
+  padding: 14px 28px;
+  border: none;
+  border-radius: 25px;
+  background: #ff6b8a;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 15px rgba(255,105,135,0.4);
+}
+
+#continueBtn:hover {
+  background: #ff4f73;
+  transform: scale(1.05);
+}

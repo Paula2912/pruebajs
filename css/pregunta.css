@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+  font-family: 'Dancing Script', cursive;
+  background: linear-gradient(135deg, #ffe6eb, #fff1f2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  overflow: hidden;
+  color: #5a2a2a;
+}
+
+.container {
+  text-align: center;
+  padding: 30px 20px;
+}
+
+h1 {
+  font-size: 42px;
+  margin-bottom: 40px;
+  text-shadow: 2px 2px 5px rgba(255,105,135,0.3);
+}
+
+.buttons button {
+  margin: 0 20px;
+  padding: 14px 28px;
+  border: none;
+  border-radius: 25px;
+  background: #ff6b8a;
+  color: white;
+  font-size: 22px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 15px rgba(255,105,135,0.4);
+}
+
+.buttons button:hover {
+  background: #ff4f73;
+  transform: scale(1.1);
+}
+
+#message {
+  margin-top: 40px;
+  font-size: 28px;
+  color: #5a2a2a;
+  font-weight: bold;
+}

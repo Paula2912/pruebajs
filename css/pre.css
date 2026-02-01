@@ -1,0 +1,136 @@
+/* Reset básico */
+* {
+  box-sizing: border-box;
+}
+
+/* Fondo general */
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: 'Montserrat', sans-serif;
+  background: linear-gradient(135deg, #ffd1dc, #ffe6eb);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #5a2a2a;
+}
+
+/* Tarjeta principal */
+.card {
+  background: #fffafc;
+  padding: 42px 36px;
+  border-radius: 26px;
+  max-width: 420px;
+  width: 90%;
+  text-align: center;
+  box-shadow: 0 20px 45px rgba(255, 105, 135, 0.25);
+}
+
+/* Títulos */
+h1 {
+  margin-top: 0;
+  font-size: 30px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+/* Texto */
+p {
+  font-size: 15.5px;
+  line-height: 1.7;
+  margin: 16px 0;
+  font-weight: 400;
+}
+
+/* Texto secundario */
+.thanks {
+  margin-top: 26px;
+  font-size: 14.5px;
+  color: #8a4a4a;
+}
+
+/* Botonera */
+.buttons {
+  margin-top: 32px;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+/* Botones principales */
+button {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 22px;
+  background: #ff6b8a;
+  color: white;
+  font-size: 14.5px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: #ff4f73;
+  transform: translateY(-2px);
+}
+
+/* Botón secundario (opcional) */
+button.secondary {
+  background: #e0a4b4;
+}
+
+button.secondary:hover {
+  background: #d48fa0;
+}
+
+/* -------------------------------------- */
+/* GATITO PRE-HTML: lateral y más pequeño */
+
+.cat-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 15px; /* espacio entre gatito y bocadillo */
+  margin: 20px 0;
+}
+
+/* Imagen del gatito más pequeña */
+.cat-img {
+  width: 200px;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(255,105,135,0.25);
+}
+
+/* Bocadillo lateral */
+.speech-bubble {
+  position: relative;
+  background: #fffafc;
+  border: 2px solid #ff6b8a;
+  border-radius: 15px;
+  padding: 12px 14px;
+  width: 180px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.4;
+  box-shadow: 0 6px 15px rgba(255,105,135,0.25);
+}
+
+/* Triángulo apuntando al gatito */
+.speech-bubble::after {
+  content: '';
+  position: absolute;
+  left: -10px; /* apunta al gatito */
+  top: 20px;
+  border-width: 8px;
+  border-style: solid;
+  border-color: transparent #fffafc transparent transparent;
+}
+
+/* Texto pequeño fuera del bocadillo */
+.small-text {
+  font-size: 13px;
+  color: #8a4a4a;
+  margin-top: 10px;
+}
